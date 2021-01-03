@@ -16,12 +16,24 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	/// JVM RELATED
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+
+	/// SPRING
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("com.graphql-java-kickstart:graphql-spring-boot-starter:7.0.1")
+	implementation("com.graphql-java-kickstart:graphiql-spring-boot-starter:7.0.1")
+
+	/// DB
+	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
+
+	/// TESTS
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.1")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.3.1")
 }
 
 tasks.withType<KotlinCompile> {
