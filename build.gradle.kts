@@ -29,6 +29,9 @@ dependencies {
 
 	/// DB
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
+	implementation("com.h2database:h2:1.3.148")
+	implementation("org.liquibase:liquibase-core:3.8.0")
+
 
 	/// TESTS
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
@@ -39,9 +42,10 @@ dependencies {
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "11"
+		jvmTarget = "1.8"
 	}
 }
+
 
 tasks.withType<Test> {
 	useJUnitPlatform()

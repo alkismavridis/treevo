@@ -1,4 +1,4 @@
-package eu.alkismavrdis.treevo
+package eu.alkismavrdis.treevo.main
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

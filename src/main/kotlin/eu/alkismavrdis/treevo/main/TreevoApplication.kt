@@ -1,4 +1,4 @@
-package eu.alkismavrdis.treevo
+package eu.alkismavrdis.treevo.main
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

@@ -1,0 +1,17 @@
+# SERVER
+server.port: 8080
+
+
+# DATABASE
+spring.liquibase.change-log: classpath:/db-changelog/changelog-master.xml
+spring.datasource.url: jdbc:h2:file:/home/alkis/data/treevo/treevo.db
+spring.datasource.driverClassName: org.h2.Driver
+spring.datasource.username: treevo
+spring.datasource.password: treevo123!
+
+spring.h2.console.enabled: true
+spring.h2.console.path: /h2
+
+
+# LOGGING
+logging.level.root: INFO
