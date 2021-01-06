@@ -26,6 +26,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("com.graphql-java-kickstart:graphql-spring-boot-starter:7.0.1")
 	implementation("com.graphql-java-kickstart:graphiql-spring-boot-starter:7.0.1")
+	implementation("com.graphql-java:graphql-java-extended-scalars:1.0")
 
 	/// DB
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
