@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import CladeDetailsPage from "../Pages/CladeDetailsPage";
 import DummyCladeProvider from "../../../io/DummyCladeProvider";
+import Homepage from "../Pages/Homepage";
 
 
 
@@ -10,6 +11,9 @@ function App() {
 
   switch (window.location.pathname.toLowerCase()) {
     case  "/":
+    case "/home":
+    case "":
+      return <Homepage cladeProvider={cladeProvider}/>;
     case "/pages/clade-details":
       return <CladeDetailsPage cladeProvider={cladeProvider} />;
     default:

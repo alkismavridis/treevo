@@ -33,8 +33,8 @@ function CladeDetailsPage(props: Props) {
         // GOAL: every time clade changes, if it has a parentId, fetch and store the clade describing the parent clade
         if (clade == null || clade.parentId == null) return;
         props.cladeProvider.getCladeById(clade.parentId)
-                .then((p) => setParentClade(p) )
-                .catch((error) => setErrorMessage(error.message));
+            .then((p) => setParentClade(p) )
+            .catch((error) => setErrorMessage(error.message));
 
     }, [clade])
 
