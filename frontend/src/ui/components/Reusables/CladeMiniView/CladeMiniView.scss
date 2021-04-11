@@ -1,0 +1,55 @@
+.mini-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 28vw;
+  height: 20vh;
+  border: 1px solid grey;
+  margin: 10px;
+}
+
+
+.mini-view__link {
+  &:link {
+    color: #000000;
+    text-decoration: none
+  }
+
+  &:visited {
+    color: #000000;
+    text-decoration: none
+  }
+
+  &:hover {
+    color: #000000;
+    text-decoration: none
+  }
+
+  &:active {
+    color: #000000;
+    text-decoration: none
+  }
+}
+
+
+  .mini-view__img {
+    object-fit: contain;
+  }
+
+
+.mini-view__text {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  margin-left: 20px;
+}
+
+.mini-view__text-title {
+
+}
+
+.mini-view__text-desc {
+
+}

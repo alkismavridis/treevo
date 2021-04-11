@@ -29,7 +29,7 @@ dependencies {
 	implementation("com.graphql-java:graphql-java-extended-scalars:1.0")
 
 	/// DB
-	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
+	implementation("org.springframework.boot:spring-boot-starter-dummyCladeData-jdbc")
 	implementation("com.h2database:h2:1.3.148")
 	implementation("org.liquibase:liquibase-core:3.8.0")
 
